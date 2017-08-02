@@ -1,7 +1,35 @@
-.banner .nav li {
-  @extend .nav-item;
-}
+.top-nav {
+  display: flex;
+  align-items: stretch;
+  background-size: 200% 100%;
+  -webkit-animation: HeaderOrange 15s ease infinite;
+  -moz-animation: HeaderOrange 15s ease infinite;
+  -o-animation: HeaderOrange 15s ease infinite;
+  animation: HeaderOrange 15s ease infinite;
 
-.banner .nav a {
-  @extend .nav-link;
+  @include compromis-gradient;
+
+  &__parent-site {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    background: #fff;
+    padding: 0.75rem 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    &:hover {
+      background: #fff;
+    }
+  }
+
+  &__site {
+    margin-left: 1rem;
+    align-self: center;
+    font-family: $boldFont;
+    color: #fff;
+    font-size: 1.75rem;
+  }
 }
