@@ -14,7 +14,7 @@
     align-items: center;
     max-width: 200px;
     background: #fff;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 1.25rem;
 
     img {
       width: 100%;
@@ -26,10 +26,64 @@
   }
 
   &__site {
-    margin-left: 1rem;
+    margin-left: 1.25rem;
     align-self: center;
     font-family: $boldFont;
     color: #fff;
     font-size: 1.75rem;
+  }
+}
+
+.hero-image {
+  background: yellow;
+  height: 400px;
+}
+
+.nav-wrapper {
+  background: $gray-lighter;
+  margin-bottom: 1rem;
+}
+
+.nav-primary {
+  margin: 0 -1rem;
+
+  a {
+    font-size: 1.1rem;
+    display: block;
+    color: $gray;
+    padding: 0.5rem 1rem;
+  }
+
+  .sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    background: darken($gray-lighter, 10%);
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+
+    a {
+      &:hover {
+        background: darken($gray-lighter, 20%);
+      }
+    }
+  }
+
+  li {
+    position: relative;
+  }
+
+  li:hover {
+    a {
+      background: darken($gray-lighter, 10%);
+      text-decoration: none;
+    }
+
+    .sub-menu {
+      display: block;
+    }
   }
 }
