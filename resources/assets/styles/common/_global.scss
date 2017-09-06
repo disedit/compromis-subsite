@@ -19,3 +19,16 @@
   animation-delay: $delay;
   animation-fill-mode: $fill-mode;
 }
+
+body {
+  font-family: 'CompromisLight', Helvetica, arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'CompromisBold', Helvetica, arial, sans-serif;
+}
