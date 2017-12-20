@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/compromis-subsite",
-  "devUrl": "https://local.compromis.dev",
+  "devUrl": "https://local.compromis.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
